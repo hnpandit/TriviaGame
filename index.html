@@ -7,78 +7,69 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>jQyery Unit 4 Game</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>US Presidents Trivia Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="bg">
 
-    <div class="container" style="margin-top: 30px;">
+    <div class="container" style="margin-top: 30px; border: 1px;">
         
-      <div class="jumbotron">
+      <div class="jumbotron" style="border: 1px;">
         
-        <div class="row">
+        <div class="row" style="text-align:center;">
           <div class="col-md-12">
-              <h2>Welcome back. I hope you liked my word guess game. You will play another intresting game today against computer.</h2>
+              <h2>Totally Trivial Trivia!</h2>
           </div>
         </div>
 
         <div class="row">
-            <div class="col-md-8"> 
-              <h2>
-                Computer has guessed <span class="label label-info" id="lblComputerGuess"></span>
-              </h2>
-            </div>
+          <div class="col-md-12">
+              <h4>Message: <button type="button" class="btn-danger btn-lg" id="lblInfo">None</button></h4>
+          </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <h4>Your challenge is to collect (click) on any crystals below any number of times to match above number.</h4>
+                <h2>Question: <span class="label label-success" id="lblQuestion"></span></h4>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-2">
-                <img src="assets/images/crystal1.jpg" style="width:100px;height:100px;">
-                <button type="button" id="crystal1" class="btn btn-warning btn-sm" style="width:100px;">Click Me</button> 
-            </div> 
-            <div class="col-md-2">
-                <img src="assets/images/crystal2.jpg" style="width:100px;height:100px;">
-                <button type="button" id="crystal2" class="btn btn-warning btn-sm" style="width:100px;">Pick Me</button> 
-            </div> 
-            <div class="col-md-2">
-                <img src="assets/images/crystal3.jpg" style="width:100px;height:100px;">
-                <button type="button" id="crystal3" class="btn btn-warning btn-sm" style="width:100px;">Choose Me</button> 
-            </div> 
-            <div class="col-md-2">
-                <img src="assets/images/crystal4.jpg" style="width:100px;height:100px;">
-                <button type="button" id="crystal4" class="btn btn-warning btn-sm" style="width:100px;">Select Me</button> 
-            </div>
+          <div class="col-md-12">
+              <h2>Click below. Time Remaining: <span class="label label-info" id="lblTimeRemaining"></span>
+          </div>
         </div>
 
-        <div class="row">
-            <div id="total" class="col-md-6"> 
-              <h2>
-                Your total so far is <span class="label label-info" id="lblYourGuess">0</span> 
-              </h2>
-            </div>
+        <div class="row" style="margin: 10px;">
+          <div class="col-md-12">
+              <button type="button" id="btnAnsChoice1" class="btn btn-warning btn-lg"></button> 
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <h2>
-                 Your wins: <div class="label label-success" id="lblWin"></div>
-                </h2>
-            </div>
-            <div class="col-md-3">
-                <h2>
-                 Your losses: <div class="label label-danger" id="lblLoss"></div> 
-                </h2>
-            </div>
+        <div class="row" style="margin: 10px;">
+          <div class="col-md-12">
+            <button type="button" id="btnAnsChoice2" class="btn btn-warning btn-lg"></button> 
+          </div>
         </div>
+
+        <div class="row" style="margin: 10px;">
+          <div class="col-md-12">
+            <button type="button" id="btnAnsChoice3" class="btn btn-warning btn-lg"></button> 
+          </div>
+        </div>
+
+        <div class="row" style="margin: 10px;">
+          <div class="col-md-12">
+            <button type="button" id="btnAnsChoice4" class="btn btn-warning btn-lg"></button> 
+          </div>
+        </div>
+        
+        <hr>
 
         <div class="row">
             <div class="col-md-12">
@@ -90,7 +81,7 @@
 
     </div>
 
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 </html>
